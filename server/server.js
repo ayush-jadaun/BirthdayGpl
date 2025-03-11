@@ -5,6 +5,7 @@ import http from "http";
 import { Server } from "socket.io";
 import connectDB from "./config/db.js";
 import registrationRoutes from "./routes/registration.js";
+import playerRoutes from "./routes/player.js";
 import gameSocket from "./sockets/gameSocket.js";
 
 dotenv.config();
@@ -17,6 +18,7 @@ app.use(express.json());
 connectDB();
 
 app.use("/api", registrationRoutes);
+app.use("/api", playerRoutes);
 
 const server = http.createServer(app);
 const io = new Server(server, {
