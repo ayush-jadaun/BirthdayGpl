@@ -1,0 +1,23 @@
+{
+  "name": "gpl",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ayush-jadaun/BirthdayGpl#readme",
+  "bugs": {
+    "url": "https://github.com/ayush-jadaun/BirthdayGpl/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayush-jadaun/BirthdayGpl.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mongoose": "^8.12.1"
+  }
+}
